@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    /* border: 1px solid red; */
+    height: 650px;
+    align-items: center;
+}
+
+.logo{
+    /* border: 1px solid blueviolet; */
+    width:15%;
+    text-align: center;
+    margin-top: 15px;
+ 
+    
+}
+
+.titulo{
+    margin-left: 15%;
+    margin-top: -2.5%;
+   /*  border: 1px solid green; */
+    width: 15%;
+    height: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(87, 89, 92);
+    font-size: 70%;
+
+}
+
+header{
+     /*border: 1px solid rgb(211, 204, 204);*/
+     margin-top: 0px; 
+    
+   
+}
+
+.boton{
+    /* border: 1px solid black; */
+    margin-left: 80%;
+    margin-top: -2%;
+    padding: 10px;
+    display: flex;
+}
+
+#content{
+    /* border: 1px solid rgb(73, 19, 199);  */
+    margin-top: 50px;
+    height: 500px;
+    margin-left: 2%;
+    width: 700px;
+}
+
+.p1{
+    /*border: 1px solid black;*/
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 15%;
+    font-size: 140%;
+    color: #008196;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: 570px;
+
+}
+
+.p2{
+     /*border: 1px solid black;*/ 
+    height: 120px;
+    margin-top: 60px;
+    margin-left: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 130%;
+    color: rgba(66, 65, 65, 0.89);
+    font-weight: bold;
+    width: 550px;
+
+    
+}
+
+.Imagen{
+    /* border: 1px solid rgb(15, 161, 130); */
+    margin-left: 49%;
+    margin-top: -32.5%;
+    width: 500px;
+    height: 300px;
+   
+
+}
+
+.boton{
+    border: 0;
+    background-image: linear-gradient(
+    150deg,
+    #9500ff,
+    #09f,
+    #00DDFF,    
+    );
+    border-radius: 8px;
+    color:#fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button span{
+    background-color: #008196;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+
+}
+
+button:hover span{
+    background: none;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+.seccionBaja{
+border: 1px solid rgb(211, 204, 204);
+background: #008196;
+/*text-align: center;*/
+margin-top: -40px;
+}
+
+@media screen and (max-width: 767px) {
+ 
+    .boton {
+        margin-top: 20px;
+    }
+}
