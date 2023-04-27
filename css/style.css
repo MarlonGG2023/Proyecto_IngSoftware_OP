@@ -22,7 +22,7 @@ body {
 }
 
 header{
-    /*border: 1px solid #000;*/
+    /* border: 1px solid #000; */
     /*position: fixed;*/
     background-color: #026788;
     top: 0;
@@ -36,6 +36,7 @@ header{
 }
 
 header input{
+
     display: none;
 }
 
@@ -48,7 +49,7 @@ header .LogoPerfil .navbar{
 }
 
 header .LogoPerfil .navbar a{
-    /*border: 1px solid #000;*/
+    /* border: 1px solid #000; */
     font-size: 1.8rem;
     margin-left: 2rem;
     color: var(--blanco);
@@ -92,6 +93,7 @@ section{
    align-items: center;
    background-size:cover;
    background-position: center;
+   flex-wrap: wrap;
 }
 .ImagenP img{
    /*border: 1px solid #000;*/
@@ -103,11 +105,13 @@ section{
    margin-left: 17%;
    box-shadow: 0 .5rem 1rem rgba(.4, .4, .4, .4);
    /* animation: float 3s linear infinite; */
+   flex-wrap: wrap;
 
 }
 
 .centrado{
     /*border: 1px solid #000;*/
+    display: flex;
     font-size: 50px;
     color: #fff;
     position: absolute;
@@ -115,6 +119,9 @@ section{
     left: 27%;
     transform: translate(-50%, -50%);
     /* animation: float 3s linear infinite; */
+    text-align: center;
+    flex-wrap: wrap;
+    margin-left: 370px;
 }
 
 @keyframes float{
@@ -138,10 +145,10 @@ section{
 }
 
 .contenido .item-contenedor{
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 .contenido .item-contenedor .item{
@@ -207,38 +214,128 @@ section{
 }
 
 .logo-footer{
-    /*border: 1px solid #000;*/
+    /* border: 1px solid #000; */
     width: 9%;
     height: 10%;
     margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 5%;
     text-align: center;
     display: flex;
 }
 
+.logo-footer img{
+    width: 200px;
+    height: 150px;
+}
+
+
+
 .contenidoRedesU{
-    /*border: 1px solid #000;*/
+    /* border: 1px solid #000; */
     color: #fff;
-    margin-left: 3%;
+    margin-left: 8%;
     text-align: center;
 }
 footer .contenidoRedesU a:hover{
     text-decoration-line:underline;
 }
 
+@media(max-width:1250px){
+    html{
+        font-size: 50%;
+    }
+
+}
+
 @media(max-width:1200px){
     html{
         font-size: 70%;
     }
+
+    .LogoPerfil{
+        /* border: 1px solid #000; */
+        height: 100px;
+        width: 450px;
+        align-items: center;
+        margin-left: 27%;
+        margin-top: 3%;
+    }
+
+    
+    header .LogoPerfil .navbar a{
+        /* border: 1px solid #000; */
+        position:static;
+        /* display:run-in; */
+        margin: 2rem 0;
+        margin-left: 1.5%;
+        padding-left: 1%;
+        /* font-size: 2rem; */
+    }
+    
+    .ImagenPrincipal {
+        display: flex;
+        align-items: center;
+        size-adjust: 1%;
+    }
+
+    .ImagenPrincipal .ImagenP img{
+        display: flex;
+        align-items: center;
+        margin-left: 1%;
+        width: 750px;
+    }
+    .ImagenPrincipal .centrado{
+        font-size: 4rem;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        /* width: 110%;*/
+        margin-left: 23%; 
+    }
+
+    footer .RedesU .contenidoRedesU {
+        font-size: 100%;
+        text-align:center;
+        flex-wrap: wrap;
+        margin-left: 1%;
+    }
+
+    footer .logo-footer{
+        /* border: 1px solid #000; */
+        margin-left: 3%;
+        
+    }
+
+    .logo-footer img{
+        width: 100px;
+        height: 100px;
+    }
 }
+
 
 @media(max-width:760px){
 
     html{
         font-size: 50%;
     }
+
+    .LogoPerfil {
+        /* border: 1px solid #000; */
+        margin: 2rem;
+    }
+
+    header .LogoPerfil .navbar a{
+        display: none;
+        /* border: 1px solid #000; */
+        /* display:run-in; */
+        /* margin: 2rem 0;
+        margin-left: -100px; */
+        /* padding-left: 1%; */
+        /* font-size: 2rem; */
+    }
     
-    header .LogoPerfil .navbar{
+    /* header .LogoPerfil .navbar{
         position: absolute;
         top: 100%;
         left: 0;
@@ -250,32 +347,34 @@ footer .contenidoRedesU a:hover{
         transform-origin: top;
         transform: scaleY(0);
     }
-
-    header .LogoPerfil .navbar a{
+ 
+    /* header .LogoPerfil .navbar a{
+        /*border: 1px solid #000;
         display: block;
         margin: 2rem 0;
         font-size: 2rem;
-    }
-    header .LogoPerfil input:checked ~.navbar{
+    } */
+    /* header .LogoPerfil input:checked ~.navbar{
         transform: scaleY(1);
-    }
+    } */
 
-    header .LogoPerfil input:checked ~ img::before{ 
+    /* header .LogoPerfil input:checked ~ img::before{ 
         content:'\f00d';
-        /*Para combinar la foto de perfil con la opción de menú*/
-    }
+        /*Para combinar la foto de perfil con la opción de menú
+    } */
 
     .ImagenPrincipal{
-        flex-flow: column-reverse
+        flex-flow: column-reverse;
     }
 
     .ImagenPrincipal .ImagenP img{
-        width: 100%;
+        /* width: 100%; */
+        margin-left: -10%;
     }
 
     .ImagenPrincipal .centrado{
-        width: 100%;
-        align-items: center;
+        /* width: 100%; */
+        /* align-items: center; */
     }
 
     footer .RedesU .contenidoRedesU {
@@ -288,7 +387,42 @@ footer .contenidoRedesU a:hover{
 }
 
 @media(max-width:500px){
-    html{
-        font-size: 10%;
+    .Logos img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .LogoPerfil{
+        /* border: 1px solid #000; */
+        height: 10px;
+        width: 10px;
+        align-items: center;
+        margin-left: 77%;
+        margin-top: 2%;
+    }
+
+    .LogoPerfil img{
+        height: 60px;
+        width: 60px;
+    }
+
+
+    footer .RedesU .contenidoRedesU {
+        font-size: 9px;
+        text-align:center;
+        flex-wrap: wrap;
+        margin-left: 6%;
+    }
+
+    footer .logo-footer{
+        /* border: 1px solid #000; */
+        margin-left: 1%;
+        margin-top: 10%;
+        
+    }
+
+    .logo-footer img{
+        width: 70px;
+        height: 70px;
     }
 }
